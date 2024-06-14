@@ -1,0 +1,97 @@
+body {
+    background-color: #333;
+    color: #FFD700;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('arka.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmin sayfayı tamamen kaplaması için */
+    background-position: center; /* Resmin ortalanması için */
+    background-repeat: no-repeat; /* Resmin tekrarlanmaması için */
+}
+
+.header {
+    background-color: rgba(51, 51, 51, 0.9); /* Transparan arkaplan rengi */
+    color: #FFD700;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 2px solid #FFD700;
+    position: relative; /* İçeriklerin üzerinde olması için */
+    z-index: 2;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9); /* Transparan arkaplan rengi */
+    overflow: hidden;
+    border-bottom: 2px solid #FFD700;
+    position: relative; /* İçeriklerin üzerinde olması için */
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    color: #FFD700;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+/* Yeni CSS Kodları */
+.content {
+    background-color: #363636; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: calc(100vh - 140px); /* Ekran yüksekliğinin tamamından header ve footer yüksekliklerini çıkar */
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-content {
+    background-color: rgba(192, 192, 192, 0.9); /* Gri arkaplan rengi */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    flex-grow: 1; /* İçerik alanının diğer içeriklerden kalan boşluğu kaplaması için */
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Transparan arkaplan rengi */
+    color: #FFD700;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #FFD700;
+}
+
+h1 {
+    color: #FFD700;
+    margin-top: 0;
+}
+
+p {
+    color: #FFF;
+    font-size: 18px;
+}
